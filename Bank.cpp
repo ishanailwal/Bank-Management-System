@@ -43,7 +43,7 @@ void account::create_account()
 	cout << "\tEnter Password(only number): ";
 	cin >> password;
 	cout << "\n\n\tEnter The Name of The account Holder : ";
-	fgets(name, sizeof(50), stdin);
+	gets(name);
 	cout << "\n\tEnter Type of The account (C/S) : ";
 	cin >> type;
 	type = toupper(type);
@@ -66,7 +66,7 @@ void account::modify()
 {
 	cout << "\n\tThe account No." << acno;
 	cout << "\n\n\tEnter The Name of The account Holder : ";
-	fgets(name, sizeof(50), stdin);
+	gets(name);
 	cout << "\n\tEnter Type of The account (C/S) : ";
 	cin >> type;
 	type = toupper(type);
